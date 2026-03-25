@@ -141,7 +141,7 @@ class AssetLoader {
    * 预加载章节资源
    */
   async preloadChapter(
-    chapterNumber: number,
+    _chapterNumber: number,
     backgrounds: string[],
     characters: string[],
     bgm: string[],
