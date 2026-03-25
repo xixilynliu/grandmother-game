@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    font-family: 'Noto Sans SC', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .game-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .choice-button {
+    transition: all 0.3s ease;
+  }
+  
+  .choice-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .stat-bar {
+    transition: width 0.5s ease-in-out;
+  }
+}
