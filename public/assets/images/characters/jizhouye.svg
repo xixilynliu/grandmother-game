@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="zysuit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d4a2d"/>
+      <stop offset="100%" style="stop-color:#1a2e1a"/>
+    </linearGradient>
+  </defs>
+  <!-- 头发（较为活泼的发型） -->
+  <ellipse cx="200" cy="95" rx="70" ry="75" fill="#2d1b00"/>
+  <path d="M140 70 Q160 50 200 55 Q240 50 260 70" fill="#2d1b00"/>
+  <!-- 脸 -->
+  <ellipse cx="200" cy="125" rx="52" ry="62" fill="#f5deb3"/>
+  <!-- 眼睛（明亮有神） -->
+  <ellipse cx="173" cy="115" rx="11" ry="8" fill="#fff"/>
+  <ellipse cx="227" cy="115" rx="11" ry="8" fill="#fff"/>
+  <circle cx="173" cy="115" r="5" fill="#3d2314"/>
+  <circle cx="227" cy="115" r="5" fill="#3d2314"/>
+  <circle cx="175" cy="113" r="2" fill="#fff"/>
+  <circle cx="229" cy="113" r="2" fill="#fff"/>
+  <!-- 眉毛 -->
+  <path d="M155 100 Q170 95 188 100" stroke="#2d1b00" stroke-width="2.5" fill="none"/>
+  <path d="M212 100 Q230 95 245 100" stroke="#2d1b00" stroke-width="2.5" fill="none"/>
+  <!-- 鼻子 -->
+  <path d="M200 125 L196 148 L204 148" stroke="#d4a574" stroke-width="1" fill="none"/>
+  <!-- 嘴巴（微笑） -->
+  <path d="M178 165 Q200 178 222 165" stroke="#c87878" stroke-width="2.5" fill="none"/>
+  <!-- 脖子 -->
+  <rect x="183" y="178" width="34" height="47" fill="#f5deb3"/>
+  <!-- 学生制服/休闲西装 -->
+  <path d="M135 225 L110 700 L290 700 L265 225 Z" fill="url(#zysuit)"/>
+  <!-- 衬衫 -->
+  <path d="M170 225 L200 250 L230 225" fill="#fff"/>
+  <!-- 领带 -->
+  <path d="M190 250 L200 400 L210 250" fill="#4169e1"/>
+  <!-- 手臂 -->
+  <path d="M135 250 Q100 330 110 480" stroke="url(#zysuit)" stroke-width="32" fill="none" stroke-linecap="round"/>
+  <path d="M265 250 Q300 330 290 480" stroke="url(#zysuit)" stroke-width="32" fill="none" stroke-linecap="round"/>
+  <!-- 名字 -->
+  <text x="200" y="780" text-anchor="middle" fill="#2d4a2d" font-size="24" font-family="serif">纪舟野</text>
+</svg>

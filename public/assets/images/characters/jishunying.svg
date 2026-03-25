@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="syoutfit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4a6a"/>
+      <stop offset="100%" style="stop-color:#2d2d4a"/>
+    </linearGradient>
+  </defs>
+  <!-- 头发（小孩发型） -->
+  <ellipse cx="200" cy="100" rx="65" ry="70" fill="#1a1a1a"/>
+  <path d="M145 85 Q165 65 200 70 Q235 65 255 85" fill="#1a1a1a"/>
+  <!-- 脸（孩童脸庞） -->
+  <ellipse cx="200" cy="125" rx="48" ry="55" fill="#ffe4c4"/>
+  <!-- 眼睛（大而明亮） -->
+  <ellipse cx="175" cy="118" rx="13" ry="10" fill="#fff"/>
+  <ellipse cx="225" cy="118" rx="13" ry="10" fill="#fff"/>
+  <circle cx="175" cy="118" r="6" fill="#2c1810"/>
+  <circle cx="225" cy="118" r="6" fill="#2c1810"/>
+  <circle cx="177" cy="116" r="2.5" fill="#fff"/>
+  <circle cx="227" cy="116" r="2.5" fill="#fff"/>
+  <!-- 眉毛 -->
+  <path d="M158 102 Q175 98 190 103" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M210 103 Q225 98 242 102" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <!-- 鼻子 -->
+  <ellipse cx="200" cy="138" rx="5" ry="4" fill="#deb887"/>
+  <!-- 嘴巴（天真微笑） -->
+  <path d="M182 155 Q200 165 218 155" stroke="#d87878" stroke-width="2" fill="none"/>
+  <!-- 腮红 -->
+  <ellipse cx="155" cy="140" rx="10" ry="7" fill="#ffb6c1" opacity="0.5"/>
+  <ellipse cx="245" cy="140" rx="10" ry="7" fill="#ffb6c1" opacity="0.5"/>
+  <!-- 脖子 -->
+  <rect x="185" y="172" width="30" height="38" fill="#ffe4c4"/>
+  <!-- 小孩服装 -->
+  <path d="M145 210 L130 600 L270 600 L255 210 Z" fill="url(#syoutfit)"/>
+  <!-- 领口 -->
+  <ellipse cx="200" cy="215" rx="35" ry="15" fill="#fff"/>
+  <!-- 纽扣 -->
+  <circle cx="200" cy="280" r="6" fill="#ffd700"/>
+  <circle cx="200" cy="340" r="6" fill="#ffd700"/>
+  <circle cx="200" cy="400" r="6" fill="#ffd700"/>
+  <!-- 手臂 -->
+  <path d="M145 230 Q115 300 125 420" stroke="url(#syoutfit)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M255 230 Q285 300 275 420" stroke="url(#syoutfit)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <!-- 手 -->
+  <ellipse cx="125" cy="430" rx="18" ry="22" fill="#ffe4c4"/>
+  <ellipse cx="275" cy="430" rx="18" ry="22" fill="#ffe4c4"/>
+  <!-- 名字 -->
+  <text x="200" y="680" text-anchor="middle" fill="#4a4a6a" font-size="24" font-family="serif">纪舜英</text>
+</svg>

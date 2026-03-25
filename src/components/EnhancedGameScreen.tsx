@@ -164,8 +164,26 @@ const EnhancedGameScreen: React.FC = () => {
     );
   }
 
+  // 获取背景图片路径
+  const getBackgroundUrl = (bg: string) => {
+    return `/grandmother-game/assets/images/backgrounds/${bg}.svg`;
+  };
+
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-900 to-slate-900">
+    <div className="relative min-h-screen overflow-hidden">
+      {/* 场景背景图片 */}
+      <div 
+        className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-slate-900"
+        style={{
+          backgroundImage: currentScene?.background ? `url(${getBackgroundUrl(currentScene.background)})` : undefined,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        {/* 暗色遮罩增强文字可读性 */}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
       {/* 转场遮罩 */}
       <AnimatePresence>
         {isTransitioning && (
@@ -219,15 +237,23 @@ const EnhancedGameScreen: React.FC = () => {
                   </span>
                 </div>
                 
-                {/* 角色图像占位 */}
-                <div className="w-48 h-64 bg-gradient-to-b from-white/10 to-transparent rounded-2xl flex items-center justify-center border border-white/20">
-                  <span className="text-6xl">
-                    {currentDialog.character === '容玉' ? '👵' : 
-                     currentDialog.character === '纪止渊' ? '🧑' :
-                     currentDialog.character === '纪舟野' ? '👨' :
-                     currentDialog.character === '容若瑶' ? '👩' :
-                     currentDialog.character === '纪舜英' ? '👴' : '👤'}
-                  </span>
+                {/* 角色立绘 */}
+                <div className="w-48 h-80 flex items-center justify-center">
+                  <img 
+                    src={`/grandmother-game/assets/images/characters/${
+                      currentDialog.character === '容玉' || currentDialog.character === 'rongyu' ? 'rongyu' : 
+                      currentDialog.character === '纪止渊' || currentDialog.character === 'jizhiyuan' ? 'jizhiyuan' :
+                      currentDialog.character === '纪舟野' || currentDialog.character === 'jizhouye' ? 'jizhouye' :
+                      currentDialog.character === '容若瑶' || currentDialog.character === 'rongruoya' ? 'rongruoya' :
+                      currentDialog.character === '纪舜英' || currentDialog.character === 'jishunying' ? 'jishunying' : 'rongyu'
+                    }.svg`}
+                    alt={currentDialog.character}
+                    className="max-h-80 w-auto drop-shadow-2xl"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
                 </div>
               </motion.div>
             )}

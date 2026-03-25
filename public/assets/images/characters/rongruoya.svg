@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="rhair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b00"/>
+      <stop offset="100%" style="stop-color:#4a2c00"/>
+    </linearGradient>
+    <linearGradient id="rdress" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#800080"/>
+      <stop offset="100%" style="stop-color:#4b0082"/>
+    </linearGradient>
+  </defs>
+  <!-- 头发 -->
+  <ellipse cx="200" cy="110" rx="85" ry="95" fill="url(#rhair)"/>
+  <path d="M115 100 Q90 200 100 320 Q110 350 130 320" fill="url(#rhair)"/>
+  <path d="M285 100 Q310 200 300 320 Q290 350 270 320" fill="url(#rhair)"/>
+  <!-- 脸 -->
+  <ellipse cx="200" cy="135" rx="60" ry="70" fill="#ffecd2"/>
+  <!-- 眼睛（傲慢神态） -->
+  <ellipse cx="170" cy="125" rx="14" ry="8" fill="#fff"/>
+  <ellipse cx="230" cy="125" rx="14" ry="8" fill="#fff"/>
+  <circle cx="172" cy="126" r="5" fill="#4a2c00"/>
+  <circle cx="232" cy="126" r="5" fill="#4a2c00"/>
+  <!-- 眉毛（挑起） -->
+  <path d="M148 105 Q165 98 188 108" stroke="#4a2c00" stroke-width="2.5" fill="none"/>
+  <path d="M212 108 Q235 98 252 105" stroke="#4a2c00" stroke-width="2.5" fill="none"/>
+  <!-- 鼻子 -->
+  <path d="M200 140 L196 158 L204 158" stroke="#deb887" stroke-width="1" fill="none"/>
+  <!-- 嘴巴（傲慢微笑） -->
+  <path d="M175 175 Q200 180 225 175" stroke="#cc4466" stroke-width="2.5" fill="none"/>
+  <!-- 腮红 -->
+  <ellipse cx="150" cy="155" rx="12" ry="8" fill="#ffb6c1" opacity="0.3"/>
+  <ellipse cx="250" cy="155" rx="12" ry="8" fill="#ffb6c1" opacity="0.3"/>
+  <!-- 脖子 -->
+  <rect x="180" y="195" width="40" height="45" fill="#ffecd2"/>
+  <!-- 华贵礼服 -->
+  <path d="M135 240 Q120 400 140 700 L260 700 Q280 400 265 240 Z" fill="url(#rdress)"/>
+  <!-- 珠宝装饰 -->
+  <circle cx="200" cy="260" r="15" fill="#e6e6fa" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="200" cy="260" r="8" fill="#9400d3"/>
+  <!-- 手臂 -->
+  <path d="M135 270 Q95 340 80 420" stroke="#ffecd2" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <path d="M265 270 Q305 340 320 420" stroke="#ffecd2" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <!-- 耳环 -->
+  <circle cx="135" cy="145" r="8" fill="#ffd700"/>
+  <circle cx="265" cy="145" r="8" fill="#ffd700"/>
+  <!-- 名字 -->
+  <text x="200" y="780" text-anchor="middle" fill="#800080" font-size="24" font-family="serif">容若瑶</text>
+</svg>

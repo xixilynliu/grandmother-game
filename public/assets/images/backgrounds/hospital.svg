@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#f0f8ff"/>
+  <rect y="800" width="1920" height="280" fill="#e0e0e0"/>
+  <!-- 墙面装饰线 -->
+  <rect y="200" width="1920" height="10" fill="#4682b4"/>
+  <!-- 病床 -->
+  <rect x="300" y="450" width="600" height="300" fill="#ffffff" stroke="#c0c0c0" stroke-width="4"/>
+  <rect x="320" y="470" width="560" height="150" fill="#e6f3ff"/>
+  <ellipse cx="400" cy="520" rx="60" ry="40" fill="#fff"/>
+  <!-- 医疗设备 -->
+  <rect x="950" y="350" width="150" height="400" fill="#d3d3d3" stroke="#808080" stroke-width="2"/>
+  <rect x="970" y="370" width="110" height="80" fill="#000" rx="5"/>
+  <line x1="980" y1="400" x2="1070" y2="400" stroke="#00ff00" stroke-width="2"/>
+  <!-- 窗户 -->
+  <rect x="1300" y="250" width="400" height="400" fill="#87ceeb" stroke="#fff" stroke-width="15"/>
+  <!-- 十字标志 -->
+  <rect x="100" y="100" width="80" height="30" fill="#ff0000"/>
+  <rect x="125" y="75" width="30" height="80" fill="#ff0000"/>
+  <text x="960" y="950" text-anchor="middle" fill="#4682b4" font-size="48" font-family="sans-serif" opacity="0.5">医院</text>
+</svg>

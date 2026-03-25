@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="stsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff7f50"/>
+      <stop offset="50%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#87ceeb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#stsky)"/>
+  <!-- 道路 -->
+  <rect y="650" width="1920" height="430" fill="#333"/>
+  <rect y="850" x="0" width="1920" height="10" fill="#fff" stroke-dasharray="50,30"/>
+  <!-- 建筑左 -->
+  <rect x="0" y="200" width="400" height="500" fill="#d4a574"/>
+  <rect x="50" y="250" width="80" height="100" fill="#87ceeb"/>
+  <rect x="180" y="250" width="80" height="100" fill="#87ceeb"/>
+  <rect x="300" y="250" width="80" height="100" fill="#87ceeb"/>
+  <rect x="50" y="400" width="80" height="100" fill="#87ceeb"/>
+  <rect x="180" y="400" width="80" height="100" fill="#87ceeb"/>
+  <rect x="150" y="550" width="100" height="150" fill="#5d4037"/>
+  <!-- 建筑右 -->
+  <rect x="1520" y="150" width="400" height="550" fill="#b8860b"/>
+  <rect x="1570" y="200" width="80" height="100" fill="#87ceeb"/>
+  <rect x="1700" y="200" width="80" height="100" fill="#87ceeb"/>
+  <rect x="1830" y="200" width="80" height="100" fill="#87ceeb"/>
+  <rect x="1570" y="350" width="80" height="100" fill="#87ceeb"/>
+  <rect x="1700" y="350" width="80" height="100" fill="#87ceeb"/>
+  <!-- 路灯 -->
+  <rect x="600" y="400" width="20" height="300" fill="#333"/>
+  <ellipse cx="610" cy="380" rx="40" ry="25" fill="#ffd700" opacity="0.8"/>
+  <rect x="1300" y="400" width="20" height="300" fill="#333"/>
+  <ellipse cx="1310" cy="380" rx="40" ry="25" fill="#ffd700" opacity="0.8"/>
+  <text x="960" y="980" text-anchor="middle" fill="#fff" font-size="48" font-family="sans-serif" opacity="0.5">街道</text>
+</svg>

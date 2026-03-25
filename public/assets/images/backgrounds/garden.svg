@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect y="600" width="1920" height="480" fill="url(#grass)"/>
+  <!-- 树木 -->
+  <ellipse cx="200" cy="500" rx="120" ry="150" fill="#228b22"/>
+  <rect x="180" y="500" width="40" height="100" fill="#8b4513"/>
+  <ellipse cx="1700" cy="450" rx="150" ry="180" fill="#228b22"/>
+  <rect x="1680" y="450" width="40" height="150" fill="#8b4513"/>
+  <!-- 花朵 -->
+  <circle cx="400" cy="700" r="15" fill="#ff69b4"/>
+  <circle cx="500" cy="750" r="12" fill="#ff1493"/>
+  <circle cx="600" cy="720" r="18" fill="#ff69b4"/>
+  <circle cx="1300" cy="730" r="15" fill="#ffb6c1"/>
+  <circle cx="1400" cy="700" r="12" fill="#ff69b4"/>
+  <!-- 亭子 -->
+  <path d="M860 400 L960 300 L1060 400 Z" fill="#8b0000"/>
+  <rect x="880" y="400" width="160" height="200" fill="none" stroke="#8b4513" stroke-width="8"/>
+  <text x="960" y="650" text-anchor="middle" fill="#2d5a27" font-size="48" font-family="serif" opacity="0.6">花园</text>
+</svg>

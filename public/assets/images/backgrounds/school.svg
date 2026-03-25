@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#e8f4f8"/>
+  <rect y="700" width="1920" height="380" fill="#808080"/>
+  <!-- 教学楼 -->
+  <rect x="300" y="200" width="1320" height="500" fill="#fff"/>
+  <rect x="300" y="150" width="1320" height="60" fill="#8b0000"/>
+  <!-- 窗户阵列 -->
+  <g fill="#87ceeb" stroke="#333" stroke-width="2">
+    <rect x="380" y="250" width="100" height="120"/>
+    <rect x="530" y="250" width="100" height="120"/>
+    <rect x="680" y="250" width="100" height="120"/>
+    <rect x="1090" y="250" width="100" height="120"/>
+    <rect x="1240" y="250" width="100" height="120"/>
+    <rect x="1390" y="250" width="100" height="120"/>
+    <rect x="380" y="420" width="100" height="120"/>
+    <rect x="530" y="420" width="100" height="120"/>
+    <rect x="680" y="420" width="100" height="120"/>
+    <rect x="1090" y="420" width="100" height="120"/>
+    <rect x="1240" y="420" width="100" height="120"/>
+    <rect x="1390" y="420" width="100" height="120"/>
+  </g>
+  <!-- 大门 -->
+  <rect x="860" y="400" width="200" height="300" fill="#5d4037"/>
+  <rect x="860" y="250" width="200" height="100" fill="#87ceeb"/>
+  <!-- 校名 -->
+  <rect x="750" y="160" width="420" height="40" fill="#fff"/>
+  <text x="960" y="190" text-anchor="middle" fill="#8b0000" font-size="28" font-family="serif">育英中学</text>
+  <text x="960" y="950" text-anchor="middle" fill="#333" font-size="48" font-family="sans-serif" opacity="0.5">学校</text>
+</svg>

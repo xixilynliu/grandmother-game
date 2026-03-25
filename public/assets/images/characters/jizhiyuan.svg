@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="jsuit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+  </defs>
+  <!-- 头发 -->
+  <ellipse cx="200" cy="100" rx="75" ry="80" fill="#1a1a1a"/>
+  <path d="M130 80 Q150 60 180 70" fill="#1a1a1a"/>
+  <path d="M270 80 Q250 60 220 70" fill="#1a1a1a"/>
+  <!-- 脸 -->
+  <ellipse cx="200" cy="130" rx="55" ry="65" fill="#f5deb3"/>
+  <!-- 眼睛（深邃） -->
+  <ellipse cx="172" cy="120" rx="12" ry="7" fill="#fff"/>
+  <ellipse cx="228" cy="120" rx="12" ry="7" fill="#fff"/>
+  <circle cx="172" cy="120" r="5" fill="#2c1810"/>
+  <circle cx="228" cy="120" r="5" fill="#2c1810"/>
+  <circle cx="174" cy="118" r="1.5" fill="#fff"/>
+  <circle cx="230" cy="118" r="1.5" fill="#fff"/>
+  <!-- 眉毛（英挺） -->
+  <path d="M152 102 Q172 97 190 104" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <path d="M210 104 Q228 97 248 102" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <!-- 鼻子 -->
+  <path d="M200 130 L196 155 L204 155" stroke="#d4a574" stroke-width="1.5" fill="none"/>
+  <!-- 嘴巴（冷峻） -->
+  <path d="M180 172 L200 175 L220 172" stroke="#b87878" stroke-width="2" fill="none"/>
+  <!-- 脖子 -->
+  <rect x="182" y="185" width="36" height="50" fill="#f5deb3"/>
+  <!-- 西装 -->
+  <path d="M130 235 L100 700 L300 700 L270 235 Z" fill="url(#jsuit)"/>
+  <!-- 领带 -->
+  <path d="M185 235 L200 280 L215 235" fill="#8b0000"/>
+  <path d="M190 280 L200 450 L210 280" fill="#8b0000"/>
+  <!-- 衬衫领 -->
+  <path d="M165 235 L200 260 L235 235" fill="#fff"/>
+  <!-- 西装翻领 -->
+  <path d="M130 235 L170 235 L200 300 L130 300" fill="#2d2d4a"/>
+  <path d="M270 235 L230 235 L200 300 L270 300" fill="#2d2d4a"/>
+  <!-- 手臂 -->
+  <path d="M130 260 Q90 350 100 500" stroke="url(#jsuit)" stroke-width="35" fill="none" stroke-linecap="round"/>
+  <path d="M270 260 Q310 350 300 500" stroke="url(#jsuit)" stroke-width="35" fill="none" stroke-linecap="round"/>
+  <!-- 名字 -->
+  <text x="200" y="780" text-anchor="middle" fill="#1a1a2e" font-size="24" font-family="serif">纪止渊</text>
+</svg>

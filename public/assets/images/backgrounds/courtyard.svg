@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="csky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#b0e0e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#csky)"/>
+  <rect y="600" width="1920" height="480" fill="#808080"/>
+  <!-- 石板路 -->
+  <rect x="800" y="600" width="320" height="480" fill="#696969"/>
+  <!-- 围墙 -->
+  <rect x="0" y="300" width="200" height="400" fill="#d4a574"/>
+  <rect x="1720" y="300" width="200" height="400" fill="#d4a574"/>
+  <!-- 假山 -->
+  <path d="M300 600 L400 400 L500 500 L600 350 L700 600 Z" fill="#808080"/>
+  <!-- 池塘 -->
+  <ellipse cx="1400" cy="750" rx="250" ry="100" fill="#4682b4" opacity="0.7"/>
+  <!-- 荷花 -->
+  <circle cx="1350" cy="730" r="20" fill="#ffb6c1"/>
+  <circle cx="1450" cy="760" r="25" fill="#ff69b4"/>
+  <!-- 树 -->
+  <ellipse cx="250" cy="450" rx="100" ry="130" fill="#228b22"/>
+  <rect x="230" y="500" width="40" height="100" fill="#8b4513"/>
+  <text x="960" y="950" text-anchor="middle" fill="#5d4037" font-size="48" font-family="serif" opacity="0.5">庭院</text>
+</svg>
