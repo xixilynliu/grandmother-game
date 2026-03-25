@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useSelector } from 'react-redux';
-import { RootState } from '../store';
 import { audioManager } from '../utils/audioManager';
 
 interface ChoiceButtonProps {
@@ -22,7 +20,6 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   unlockHint,
 }) => {
   const [isPressed, setIsPressed] = useState(false);
-  const settings = useSelector((state: RootState) => state.settings);
 
   const handleClick = () => {
     if (disabled || locked) {

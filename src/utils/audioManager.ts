@@ -5,22 +5,14 @@
 
 import { AudioSettings } from '../types/game';
 
-export type AudioType = 'bgm' | 'sfx' | 'voice';
 class AudioManager {
-  private bgmAudio: HTMLAudioElement | null = null;
+  private bgmInstance: HTMLAudioElement | null = null;
+  private voiceInstance: HTMLAudioElement | null = null;
   private currentBGM: string = '';
   private sfxPool: Map<string, HTMLAudioElement[]> = new Map();
-  private voiceAudio: HTMLAudioElement | null = null;
-  
-  private bgmVolume: number = 0.7;
-  private sfxVolume: number = 0.8;
-  private voiceVolume: number = 1.0;
-  
-  private isMuted: boolean = false;
-  private fadeInterval: number | null = null;
+  private settings: AudioSettings;
 
   constructor() {
-    // 默认设置
     this.settings = {
       bgmVolume: 0.5,
       sfxVolume: 0.7,
@@ -35,10 +27,9 @@ class AudioManager {
   /**
    * 更新音频设置
    */
-  updateSettings(newSettings: Partial<AudioSettings>) {
+  updateSettings(newSettings: Partial<AudioSettings>): void {
     this.settings = { ...this.settings, ...newSettings };
     
-    // 应用音量变化
     if (this.bgmInstance) {
       this.bgmInstance.volume = this.settings.bgmEnabled ? this.settings.bgmVolume : 0;
     }
@@ -60,19 +51,16 @@ class AudioManager {
   async playBGM(src: string, fadeInDuration: number = 1000): Promise<void> {
     if (!this.settings.bgmEnabled || !src) return;
 
-    // 如果正在播放相同的BGM，不做处理
     if (this.currentBGM === src && this.bgmInstance && !this.bgmInstance.paused) {
       return;
     }
 
-    // 淡出旧BGM
     if (this.bgmInstance && !this.bgmInstance.paused) {
       await this.fadeOut(this.bgmInstance, 800);
       this.bgmInstance.pause();
       this.bgmInstance.currentTime = 0;
     }
 
-    // 创建新BGM实例
     const newBGM = new Audio(src);
     newBGM.loop = true;
     newBGM.volume = 0;
@@ -81,11 +69,9 @@ class AudioManager {
       await newBGM.play();
       this.bgmInstance = newBGM;
       this.currentBGM = src;
-      
-      // 淡入新BGM
       await this.fadeIn(newBGM, this.settings.bgmVolume, fadeInDuration);
     } catch (error) {
-      console.warn('BGM播放失败:', error);
+      // 静默处理，资源不存在时不报错
     }
   }
 
@@ -116,7 +102,7 @@ class AudioManager {
    */
   resumeBGM(): void {
     if (this.bgmInstance && this.settings.bgmEnabled) {
-      this.bgmInstance.play().catch(console.warn);
+      this.bgmInstance.play().catch(() => {});
     }
   }
 
@@ -126,30 +112,26 @@ class AudioManager {
   playSFX(src: string, volume?: number): void {
     if (!this.settings.sfxEnabled || !src) return;
 
-    // 从音效池获取或创建新实例
     let sfxArray = this.sfxPool.get(src);
     if (!sfxArray) {
       sfxArray = [];
       this.sfxPool.set(src, sfxArray);
     }
 
-    // 查找空闲的音效实例
     let sfx = sfxArray.find(audio => audio.paused || audio.ended);
     
     if (!sfx) {
-      // 创建新实例（限制池大小）
       if (sfxArray.length < 5) {
         sfx = new Audio(src);
         sfxArray.push(sfx);
       } else {
-        // 复用最老的实例
         sfx = sfxArray[0];
         sfx.currentTime = 0;
       }
     }
 
     sfx.volume = volume ?? this.settings.sfxVolume;
-    sfx.play().catch(console.warn);
+    sfx.play().catch(() => {});
   }
 
   /**
@@ -161,7 +143,6 @@ class AudioManager {
       return;
     }
 
-    // 停止当前配音
     if (this.voiceInstance) {
       this.voiceInstance.pause();
       this.voiceInstance.currentTime = 0;
@@ -174,11 +155,14 @@ class AudioManager {
       onEnd?.();
     };
 
+    voice.onerror = () => {
+      onEnd?.();
+    };
+
     try {
       await voice.play();
       this.voiceInstance = voice;
     } catch (error) {
-      console.warn('配音播放失败:', error);
       onEnd?.();
     }
   }
@@ -246,7 +230,6 @@ class AudioManager {
     this.stopBGM();
     this.stopVoice();
     
-    // 清理音效池
     this.sfxPool.forEach(sfxArray => {
       sfxArray.forEach(sfx => {
         sfx.pause();
